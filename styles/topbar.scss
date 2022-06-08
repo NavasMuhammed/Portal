@@ -1,0 +1,54 @@
+.tab {
+  width: 100%;
+  height: 72px;
+  background-color: rgb(255, 255, 255);
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    padding-top: 22px;
+
+    .icons {
+      width: 100px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .headder {
+      font-family: sans-serif;
+      font-size: 24px;
+    }
+  }
+}
+.topbarLower {
+  padding: 16px;
+  border-top: 1px solid #e2e8f065;
+  .contents {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    color: #475569;
+    font-size: 14px;
+    span {
+      &:after {
+        content: "";
+        height: 2px;
+        width: 5px;
+        background: rgb(40, 233, 30);
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        opacity: 0;
+        transform-origin: left center;
+        transform: scaleX(0);
+      }
+    }
+    &:hover {
+      span:after {
+        transform: scaleX(1);
+        opacity: 1;
+      }
+    }
+  }
+}

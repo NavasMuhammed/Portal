@@ -1,0 +1,217 @@
+.tab {
+  width: 100%;
+  height: 134px;
+  background-color: rgb(255, 255, 255);
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    padding-top: 22px;
+
+    .icons {
+      width: 100px;
+      display: flex;
+      justify-content: space-between;
+      
+    }
+    .headder {
+      font-family: sans-serif;
+      font-size: 24px;
+      
+    }
+  }
+}
+
+.topbarLower {
+  padding: 16px;
+  border-top: 1px solid #e2e8f065;
+  .contents {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    color: #475569;
+    font-size: 14px;
+    span{
+      &:after{
+        content: "";
+        height:2px;
+        width:5px;
+        background: rgb(40, 233, 30);
+        position: absolute;
+        left:0px;
+        right:0px;
+        opacity: 0;
+        transform-origin: left center;
+        transform:scaleX(0);
+      }
+     
+    }
+    &:hover{
+      span:after{
+        transform: scaleX(1);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.mainBody {
+  display: flex;
+  background-color: #f7f7f7;
+}
+.leftMenu {
+  padding: 40px;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  /* margin-top: 40px; */
+  justify-content: space-between;
+  height: 504px;
+  padding-right: 31px;
+  border-right: 1px solid #e2e8f0;
+  color: #181c27;
+  .item {
+    display: flex;
+    span {
+      margin-left: 20px;
+    }
+  }
+}
+.righContent {
+  padding: 40px;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  .titleBox {
+    display: flex;
+    justify-content: space-between;
+    #bodyTitle {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+  .background {
+    background-color: #fff;
+    width: 376px;
+    height: 37px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    .sortBox {
+      display: flex;
+      justify-content: space-around;
+      width: 368px;
+      font-size: 14px;
+    }
+  }
+
+  .inputBox {
+    display: flex;
+    margin-top: 40px;
+    .companyDetails {
+      color: #475569;
+      width: 225px;
+      height: 436px;
+      display: flex;
+      margin-right: 20px;
+      flex-direction: column;
+      justify-content: space-between;
+      :nth-child(1) {
+        font-size: 14px;
+        font-weight: bold;
+        color: #64748b;
+      }
+      .inputs {
+        width: 225px;
+        height: 44px;
+        border-color: #cbd5e1;
+        color: #cbd5e1;
+        border-radius: 4px;
+        border: 1.5px solid;
+      }
+    }
+    .companyLocation {
+      color: #475569;
+      width: 248px;
+      height: 296px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .inputs {
+        width: 225px;
+        height: 44px;
+        border: 1.5px solid;
+        border-color: #cbd5e1;
+        color: #cbd5e1;
+        border-radius: 4px;
+      }
+      :nth-child(1) {
+        font-size: 14px;
+        font-weight: bold;
+        color: #64748b;
+      }
+    }
+    .financialInfo {
+      color: #475569;
+      width: 248px;
+      height: 184px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .inputs {
+        width: 225px;
+        height: 44px;
+        border: 1.5px solid;
+        border-color: #cbd5e1;
+        color: #cbd5e1;
+        border-radius: 4px;
+      }
+      :nth-child(1) {
+        font-size: 14px;
+        font-weight: bold;
+        color: #64748b;
+      }
+    }
+    .rating {
+      display: flex;
+      flex-direction: column;
+      width: 262px;
+      height: 264px;
+      background-color: #dcdcde34;
+      padding: 16px;
+      border-radius: 3px;
+
+      .headder {
+        color: #000000;
+        display: flex;
+        span {
+          font-size: 14px;
+          margin-left: 10px;
+        }
+      }
+      .inputs {
+        margin-top: 24px;
+        color: #475569;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        justify-content: space-evenly;
+        .input {
+          width: 225px;
+          height: 44px;
+          border: 1.5px solid;
+          border-color: #cbd5e1;
+          color: #cbd5e1;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
