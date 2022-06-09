@@ -21,34 +21,22 @@
   }
 }
 .topbarLower {
+  width: 100%;
+  height: 61px;
   padding: 16px;
   border-top: 1px solid #e2e8f065;
   .contents {
-    width: 500px;
+    width: 479px;
     display: flex;
+    height:29px;
     justify-content: space-between;
     margin-left: 40px;
+    align-items:center;
     color: #475569;
     font-size: 14px;
     span {
-      &:after {
-        content: "";
-        height: 2px;
-        width: 5px;
-        background: rgb(40, 233, 30);
-        position: absolute;
-        left: 0px;
-        right: 0px;
-        opacity: 0;
-        transform-origin: left center;
-        transform: scaleX(0);
-      }
+      
     }
-    &:hover {
-      span:after {
-        transform: scaleX(1);
-        opacity: 1;
-      }
-    }
+    
   }
 }

@@ -1,19 +1,19 @@
 .leftMenu {
-  padding: 40px;
-
+  border-right: 1px solid #e2e8f0;
+  padding-right: 0px;
   .items {
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
+    margin-left: 0px;
     /* margin-top: 40px; */
     justify-content: space-between;
     height: 504px;
     padding-right: 31px;
-    border-right: 1px solid #e2e8f0;
-    color: #181c27;
+     color: #181c27;
     .item {
       display: flex;
       span {
+        
         margin-left: 20px;
       }
     }
