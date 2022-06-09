@@ -2,6 +2,7 @@ import "../styles/globals.scss";
 import "../styles/test.scss";
 import "../styles/topbar.scss";
 import "../styles/leftMenu.scss";
+import "../styles/transactions.scss";
 import LeftMenu from "./components/applications/leftMenu/LeftMenu";
 import Topbar from "./components/topBar/Topbar.js";
 
