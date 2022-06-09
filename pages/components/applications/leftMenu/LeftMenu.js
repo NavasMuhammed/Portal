@@ -1,77 +1,105 @@
 import React from "react";
-import summary from "../../../../assets/icons/summary.svg";
-import status from "../../../../assets/icons/status.svg";
-import transaction from "../../../../assets/icons/transaction.svg";
-import financial from "../../../../assets/icons/financial.svg";
-import external from "../../../../assets/icons/external.svg";
-import compliance from "../../../../assets/icons/compliance.svg";
-import research from "../../../../assets/icons/research.svg";
-import cover from "../../../../assets/icons/cover.svg";
-import trade from "../../../../assets/icons/trade.svg";
-import rating from "../../../../assets/icons/rating.svg";
-import signoff from "../../../../assets/icons/signoff.svg";
-import Image from "next/image";
-function LeftMenu() {
+import { SidebarData } from "./data";
+import {
+  PortalIcons,
+  Cover,
+  Compliance,
+  External,
+  Financials,
+  Rating,
+  Research,
+  Signoff,
+  Status,
+  Summary,
+  Trade,
+  Transaction,
+} from "../../icons";
+
+export default function LeftMenu() {
+  const [selectedId, setSelectedId] = React.useState();
+
+  const handleSelect = (index) => {
+    setSelectedId(index);
+  };
   return (
     <div className="leftMenu">
       <div className="items">
+        {SidebarData.map((item, index) => {
+          return (
+            <div
+              onClick={() => {
+                handleSelect(item.id);
+              }}
+              key={index}
+              className="item"
+            >
+              <PortalIcons
+                icon={item.title}
+                selected={selectedId === item.id}
+              />
+              <span className={selectedId === item.id ? "selected" : ""}>
+                {item.title}
+              </span>
+            </div>
+          );
+        })}
+      </div>
+      {/* <div className="items">
         <div className="item">
-          <Image src={summary} alt="summary icon" />
+          <Summary selected={selected} />
           <span>Summary</span>
         </div>
+
         <div className="item">
-          <Image src={status} alt=" icon" />
+          <Status selected={selected} />
 
           <span>Status</span>
         </div>
         <div className="item">
-          <Image src={transaction} alt=" icon" />
+          <Transaction selected={true} />
 
           <span>Transaction</span>
         </div>
         <div className="item">
-          <Image src={financial} alt=" icon" />
+          <Financials selected={selected} />
 
           <span>Financials</span>
         </div>
         <div className="item">
-          <Image src={external} alt=" icon" />
+          <External selected={selected} />
 
           <span>External Reports</span>
         </div>
         <div className="item">
-          <Image src={compliance} alt=" icon" />
+          <Compliance selected={selected} />
 
           <span>Compliance</span>
         </div>
         <div className="item">
-          <Image src={research} alt=" icon" />
+          <Research selected={selected} />
 
           <span>Research & Sentiment</span>
         </div>
         <div className="item">
-          <Image src={cover} alt=" icon" />
+          <Cover selected={selected} />
 
           <span>Cover</span>
         </div>
         <div className="item">
-          <Image src={trade} alt=" icon" />
+          <Trade selected={selected} />
 
           <span>Trade Documents</span>
         </div>
         <div className="item">
-          <Image src={rating} alt=" icon" />
-
+          <Rating selected={selected} />
           <span>Rating</span>
         </div>
         <div className="item">
-          <Image src={signoff} alt=" icon" />
+          <Signoff selected={selected} />
 
           <span>sign Off</span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
-
-export default LeftMenu;
