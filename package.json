@@ -12,7 +12,9 @@
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "sass": "^1.52.2"
+    "react-router-dom": "^6.3.0",
+    "sass": "^1.52.2",
+    "typescript": "^4.7.3"
   },
   "devDependencies": {
     "eslint": "8.17.0",

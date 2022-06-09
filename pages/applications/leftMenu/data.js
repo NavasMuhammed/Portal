@@ -1,5 +1,3 @@
-import { PortalIcons } from "../../icons";
-
 export const SidebarData = [
   {
     id: 1,

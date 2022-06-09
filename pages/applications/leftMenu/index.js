@@ -1,19 +1,6 @@
 import React from "react";
 import { SidebarData } from "./data";
-import {
-  PortalIcons,
-  Cover,
-  Compliance,
-  External,
-  Financials,
-  Rating,
-  Research,
-  Signoff,
-  Status,
-  Summary,
-  Trade,
-  Transaction,
-} from "../../icons";
+import { PortalIcons } from "./icons";
 
 export default function LeftMenu() {
   const [selectedId, setSelectedId] = React.useState();
