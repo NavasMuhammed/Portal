@@ -1,15 +1,15 @@
 import React from "react";
-import summary from "../../../assets/icons/summary.svg";
-import status from "../../../assets/icons/status.svg";
-import transaction from "../../../assets/icons/transaction.svg";
-import financial from "../../../assets/icons/financial.svg";
-import external from "../../../assets/icons/external.svg";
-import compliance from "../../../assets/icons/compliance.svg";
-import research from "../../../assets/icons/research.svg";
-import cover from "../../../assets/icons/cover.svg";
-import trade from "../../../assets/icons/trade.svg";
-import rating from "../../../assets/icons/rating.svg";
-import signoff from "../../../assets/icons/signoff.svg";
+import summary from "../../../../assets/icons/summary.svg";
+import status from "../../../../assets/icons/status.svg";
+import transaction from "../../../../assets/icons/transaction.svg";
+import financial from "../../../../assets/icons/financial.svg";
+import external from "../../../../assets/icons/external.svg";
+import compliance from "../../../../assets/icons/compliance.svg";
+import research from "../../../../assets/icons/research.svg";
+import cover from "../../../../assets/icons/cover.svg";
+import trade from "../../../../assets/icons/trade.svg";
+import rating from "../../../../assets/icons/rating.svg";
+import signoff from "../../../../assets/icons/signoff.svg";
 import Image from "next/image";
 function LeftMenu() {
   return (
