@@ -44,3 +44,25 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.progress {
+  margin-top:5px;
+  background-color: rgba(129, 207, 219, 0.2);
+  border-radius: 5px;
+  height: 10px;
+  width: 177px;
+}
+
+.progress-done {
+  background: rgba(4, 193, 222, 1);
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+
