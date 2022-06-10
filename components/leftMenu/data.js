@@ -2,7 +2,7 @@ export const SidebarData = [
   {
     id: 1,
     title: "Summary",
-    path: "/",
+    path: "/applications/summary",
   },
   {
     id: 2,
@@ -12,7 +12,7 @@ export const SidebarData = [
   {
     id: 3,
     title: "Transaction",
-    path: "/",
+    path: "/applications/transaction",
   },
   {
     id: 4,

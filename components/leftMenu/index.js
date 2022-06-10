@@ -1,10 +1,11 @@
 import React from "react";
+import Link from "next/link";
 import { SidebarData } from "./data";
 import { PortalIcons } from "./icons";
 
 export default function LeftMenu() {
-  const [selectedId, setSelectedId] = React.useState();
-
+  const [selectedId, setSelectedId] = React.useState(1);
+  console.log(selectedId);
   const handleSelect = (index) => {
     setSelectedId(index);
   };
@@ -13,21 +14,23 @@ export default function LeftMenu() {
       <div className="items">
         {SidebarData.map((item, index) => {
           return (
-            <div
-              onClick={() => {
-                handleSelect(item.id);
-              }}
-              key={index}
-              className="item"
-            >
-              <PortalIcons
-                icon={item.title}
-                selected={selectedId === item.id}
-              />
-              <span className={selectedId === item.id ? "selected" : ""}>
-                {item.title}
-              </span>
-            </div>
+            <Link href={item.path}>
+              <div
+                onClick={() => {
+                  handleSelect(item.id);
+                }}
+                key={index}
+                className="item"
+              >
+                <PortalIcons
+                  icon={item.title}
+                  selected={selectedId === item.id}
+                />
+                <span className={selectedId === item.id ? "selected" : ""}>
+                  {item.title}
+                </span>
+              </div>
+            </Link>
           );
         })}
       </div>

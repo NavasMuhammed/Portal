@@ -76,14 +76,6 @@ const Topbar = () => {
           </div>
         </div>
       </div>
-      <div className="topbarLower">
-        <div className="contents">
-          <span>Applications</span>
-          <span>Monitoring</span>
-          <span>Closed</span>
-          <span>My Tasks & Messages</span>
-        </div>
-      </div>
     </>
   );
 };

@@ -26,15 +26,22 @@
   padding: 16px;
   border-top: 1px solid #e2e8f065;
   .contents {
+    cursor: pointer;
     width: 479px;
     display: flex;
-    height:29px;
+    height: 29px;
     justify-content: space-between;
     margin-left: 40px;
-    align-items:center;
+    align-items: center;
     color: #475569;
     font-size: 14px;
-    
-    
+    .content {
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .selected {
+      background: #ecfdf5;
+      color: #10b981;
+    }
   }
 }
