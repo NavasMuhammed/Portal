@@ -4,7 +4,7 @@ import SortBarNav from "../../../components/sortBar";
 export default function Transaction() {
   return (
     <DashBoardLayout>
-      <div className="righContent">
+      <div className="rightContent">
         <div className="titleBox">
           <span id="bodyTitle">[Exporter] - [Importer] - [Date] </span>
           <div className="background">
@@ -28,19 +28,19 @@ export default function Transaction() {
             ></input>
             <span>No.of Employees</span>
             <input
-              type="number"
+              type="text"
               className="inputs"
               placeholder="Number of employees..."
             ></input>
             <span>Tax No.</span>
             <input
-              type="number"
+              type="text"
               className="inputs"
               placeholder="Tax number..."
             ></input>
             <span>Euler Hemes'DN-NO</span>
             <input
-              type="number"
+              type="text"
               className="inputs"
               placeholder="Registration numbers..."
             ></input>
@@ -82,7 +82,7 @@ export default function Transaction() {
             ></input>
           </div>
           <div className="rating">
-            <div className="headder">
+            <div className="header">
               <svg
                 width="20"
                 height="20"

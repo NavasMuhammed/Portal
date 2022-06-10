@@ -2,7 +2,7 @@ export const TopbarData = [
   {
     id: 1,
     title: "Applications",
-    path: "/applications/summary",
+    path: "/applications",
   },
   {
     id: 2,

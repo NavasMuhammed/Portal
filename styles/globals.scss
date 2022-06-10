@@ -14,7 +14,7 @@ body {
 }
 .mainBody {
   display: flex;
-  background-color: #f7f7f7;
+  background-color: #f8fafc;
 }
 .monitoring {
   width: 100vw;
@@ -44,6 +44,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .progress {
   margin-top:5px;
   background-color: rgba(129, 207, 219, 0.2);
@@ -64,3 +65,4 @@ body {
   opacity: 0;
   transition: 1s ease 0.3s;
 }
+

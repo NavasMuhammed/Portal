@@ -15,9 +15,14 @@ function TopBarNav() {
               }}
               key={index}
             >
+              {console.log(
+                "/" + `${router.asPath.split("/")[1]}` === item.path
+              )}
               <span
                 className={
-                  router.asPath === item.path ? "content selected" : "content"
+                  "/" + `${router.asPath.split("/")[1]}` === item.path
+                    ? "content selected"
+                    : "content"
                 }
               >
                 {item.title}

@@ -1,4 +1,4 @@
-export const TopbarData = [
+export const SortbarData = [
   {
     id: 1,
     title: "Supplier",
