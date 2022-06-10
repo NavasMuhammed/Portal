@@ -17,41 +17,41 @@ export const SidebarData = [
   {
     id: 4,
     title: "Financial",
-    path: "/",
+    path: "/applications/financial",
   },
   {
     id: 5,
-    title: "External",
-    path: "/",
+    title: "External Reports",
+    path: "/applications/external",
   },
   {
     id: 6,
     title: "Compliance",
-    path: "/",
+    path: "/applications/compliance",
   },
   {
     id: 7,
-    title: "Research",
-    path: "/",
+    title: "Research & Sentiment",
+    path: "/applications/research",
   },
   {
     id: 8,
     title: "Cover",
-    path: "/",
+    path: "/applications/cover",
   },
   {
     id: 9,
-    title: "Trade",
-    path: "/",
+    title: "Trade Documents",
+    path: "/applications/trade",
   },
   {
     id: 10,
     title: "Rating",
-    path: "/",
+    path: "/applications/rating",
   },
   {
     id: 11,
-    title: "SignOff",
-    path: "/",
+    title: "Sign Off",
+    path: "/applications/signoff",
   },
 ];

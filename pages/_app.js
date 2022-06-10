@@ -1,5 +1,5 @@
 import "../styles/globals.scss";
-import "../styles/test.scss";
+import "../styles/main.scss";
 import "../styles/topbar.scss";
 import "../styles/leftMenu.scss";
 
