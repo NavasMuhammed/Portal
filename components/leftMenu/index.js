@@ -2,6 +2,7 @@ import React from "react";
 import { SidebarData } from "./data";
 import { PortalIcons } from "./icons";
 import { useRouter } from "next/router";
+import Progress from "./progressbar";
 
 export default function LeftMenu() {
   const router = useRouter();
@@ -29,6 +30,9 @@ export default function LeftMenu() {
             </div>
           );
         })}
+      </div>
+      <div className="progressBox">
+        <Progress done="27"/>
       </div>
     </div>
   );

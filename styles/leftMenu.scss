@@ -1,13 +1,13 @@
 .leftMenu {
   border-right: 1px solid #e2e8f0;
   padding-right: 0px;
-  width:256px;
+  width: 256px;
   .selected {
     font-weight: 600;
   }
   .items {
     width: 177px;
-    height:456px;
+    height: 456px;
     display: flex;
     flex-direction: column;
     margin-left: 0px;
@@ -35,14 +35,26 @@
       text-decoration: none;
       font-family: Open Sans;
       font-size: 12px;
-      line-height:16px;
-      width: 200px;;
+      line-height: 16px;
+      width: 200px;
       span {
         margin-left: 20px;
         margin-top: 5px;
         // font-weight: bold;
-        color: #181C27
+        color: #181c27;
       }
     }
+  }
+  .progressBox {
+    margin-top: 164px;
+    width: 177px;
+    height: 33px;
+    span {
+      margin-left: 18px;
+      font-size: 13px;
+      color: #475569;
+      letter-spacing:-2%;
+    }
+    
   }
 }
