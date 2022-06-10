@@ -1,13 +1,10 @@
 import React from "react";
 import LeftMenu from "./leftMenu";
 import Layout from "./layout";
-const DashBoardLayout = ({ children, selectedId, setSelectedId }) => {
+const DashBoardLayout = ({ children }) => {
   return (
     <Layout>
-      <LeftMenu
-        selectedId={selectedId}
-        setSelectedId={setSelectedId}
-      ></LeftMenu>
+      <LeftMenu></LeftMenu>
       <div className="mainBody">{children}</div>
     </Layout>
   );

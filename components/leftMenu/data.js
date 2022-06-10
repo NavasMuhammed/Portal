@@ -7,7 +7,7 @@ export const SidebarData = [
   {
     id: 2,
     title: "Status",
-    path: "/",
+    path: "/applications/status",
   },
   {
     id: 3,
