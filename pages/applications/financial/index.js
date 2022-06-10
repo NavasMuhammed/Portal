@@ -1,17 +1,15 @@
 import React from "react";
 import DashBoardLayout from "../../../components/dashboardlayout";
-function Summary() {
+function Financial() {
   return (
     <>
       <DashBoardLayout>
-        <div className="righContent">
-          <div className="dummy">
-            financial page
-          </div>
+        <div className="rightContent">
+          <div className="dummy">financial page</div>
         </div>
       </DashBoardLayout>
     </>
   );
 }
 
-export default Summary;
+export default Financial;

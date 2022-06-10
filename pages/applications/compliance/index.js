@@ -1,17 +1,15 @@
 import React from "react";
 import DashBoardLayout from "../../../components/dashboardlayout";
-function Summary() {
+function Compliance() {
   return (
     <>
       <DashBoardLayout>
-        <div className="righContent">
-          <div className="dummy">
-            compliance page
-          </div>
+        <div className="rightContent">
+          <div className="dummy">compliance page</div>
         </div>
       </DashBoardLayout>
     </>
   );
 }
 
-export default Summary;
+export default Compliance;

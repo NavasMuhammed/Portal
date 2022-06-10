@@ -4,10 +4,8 @@ function Summary() {
   return (
     <>
       <DashBoardLayout>
-        <div className="righContent">
-          <div className="dummy">
-            trade page
-          </div>
+        <div className="rightContent">
+          <div className="dummy">trade page</div>
         </div>
       </DashBoardLayout>
     </>

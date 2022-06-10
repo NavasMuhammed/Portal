@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { TopbarData } from "./data";
+import { SortbarData } from "./data";
 function SortBarNav() {
   const [selectedId, setSelectedId] = React.useState();
   function handleSelect(index) {
@@ -8,9 +8,10 @@ function SortBarNav() {
   }
   return (
     <div className="sortBox">
-      {TopbarData.map((item, index) => {
+      {SortbarData.map((item, index) => {
         return (
-          <div className="sortitem"
+          <div
+            className="sortitem"
             onClick={() => {
               handleSelect(item.id);
             }}

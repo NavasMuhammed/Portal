@@ -1,3 +1,8 @@
+@font-face {
+  font-family: inter;
+  src: url(../assets/font/Inter.ttf);
+}
+
 .tab {
   width: 100%;
   height: 134px;
@@ -31,13 +36,12 @@
     margin-left: 40px;
     color: #475569;
     font-size: 14px;
-    
   }
 }
 
 .mainBody {
   display: flex;
-  background-color: #f7f7f7;
+  background-color: #f8fafc;
 }
 .leftMenu {
   padding: 40px;
@@ -59,12 +63,12 @@
     }
   }
 }
-.righContent {
+.rightContent {
   padding: 40px;
   padding-left: 40px;
   display: flex;
   flex-direction: column;
-  width:1250px;
+  width: 1250px;
   .titleBox {
     display: flex;
     justify-content: space-between;
@@ -87,9 +91,6 @@
       justify-content: space-between;
       width: 358px;
       font-size: 14px;
-      .sortitem{
-        
-      }
       .sortBoxItem {
         cursor: pointer;
         padding: 6px;
@@ -99,7 +100,6 @@
         background-color: #ecfdf5;
         color: #10b981;
         // padding: 7px;
-        
       }
     }
   }
@@ -122,12 +122,33 @@
         color: #64748b;
       }
       .inputs {
+        font-family: inter;
+        padding: 10px;
         width: 225px;
         height: 44px;
-        border-color: #cbd5e1;
-        color: #cbd5e1;
+        color: black;
         border-radius: 4px;
-        border: 1.5px solid;
+        border: 1.5px solid #cbd5e1;
+      }
+      ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #94a3b8;
+        opacity: 1; /* Firefox */
+      }
+
+      :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #94a3b8;
+      }
+
+      ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #94a3b8;
+      }
+      span {
+        font-family: inter;
+        color: #475569;
+        font-size: 14px;
       }
     }
     .companyLocation {
@@ -138,18 +159,40 @@
       flex-direction: column;
       justify-content: space-between;
 
-      .inputs {
-        width: 225px;
-        height: 44px;
-        border: 1.5px solid;
-        border-color: #cbd5e1;
-        color: #cbd5e1;
-        border-radius: 4px;
-      }
       :nth-child(1) {
         font-size: 14px;
         font-weight: bold;
         color: #64748b;
+      }
+
+      .inputs {
+        font-family: inter;
+        padding: 10px;
+        width: 225px;
+        height: 44px;
+        color: black;
+        border-radius: 4px;
+        border: 1.5px solid #cbd5e1;
+      }
+      ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #94a3b8;
+        opacity: 1; /* Firefox */
+      }
+
+      :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #94a3b8;
+      }
+
+      ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #94a3b8;
+      }
+      span {
+        font-family: inter;
+        color: #475569;
+        font-size: 14px;
       }
     }
     .financialInfo {
@@ -160,29 +203,51 @@
       flex-direction: column;
       justify-content: space-between;
       .inputs {
+        font-family: inter;
+        padding: 10px;
         width: 225px;
         height: 44px;
-        border: 1.5px solid;
-        border-color: #cbd5e1;
-        color: #cbd5e1;
+        color: black;
         border-radius: 4px;
+        border: 1.5px solid #cbd5e1;
+      }
+      ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #94a3b8;
+        opacity: 1; /* Firefox */
+      }
+
+      :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #94a3b8;
+      }
+
+      ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #94a3b8;
       }
       :nth-child(1) {
         font-size: 14px;
         font-weight: bold;
         color: #64748b;
       }
+      span {
+        font-family: inter;
+        color: #475569;
+        font-size: 14px;
+      }
     }
     .rating {
+      font-family: inter;
       display: flex;
       flex-direction: column;
       width: 262px;
-      height: 264px;
+      height: 275px;
       background-color: #dcdcde34;
       padding: 16px;
       border-radius: 3px;
 
-      .headder {
+      .header {
         color: #000000;
         display: flex;
         span {
@@ -196,14 +261,35 @@
         display: flex;
         flex-direction: column;
         height: 200px;
+        gap: 10px;
         justify-content: space-evenly;
         .input {
+          padding: 10px;
           width: 225px;
           height: 44px;
           border: 1.5px solid;
           border-color: #cbd5e1;
-          color: #cbd5e1;
+          color: black;
           border-radius: 4px;
+        }
+        span {
+          font-size: 14px;
+        }
+        ::placeholder {
+          /* Chrome, Firefox, Opera, Safari 10.1+ */
+          font-family: inter;
+          color: #94a3b8;
+          opacity: 1; /* Firefox */
+        }
+
+        :-ms-input-placeholder {
+          /* Internet Explorer 10-11 */
+          color: #94a3b8;
+        }
+
+        ::-ms-input-placeholder {
+          /* Microsoft Edge */
+          color: #94a3b8;
         }
       }
     }

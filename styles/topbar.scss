@@ -12,9 +12,9 @@
     .icons {
       width: 112px;
       display: flex;
-      
+      cursor: pointer;
     }
-    .headder {
+    .header {
       font-family: HandelBecker;
       font-size: 24px;
     }
@@ -29,7 +29,7 @@
   height: 61px;
   padding-top: 16px;
   padding-bottom: 16px;
-  padding-left:0px;
+  padding-left: 0px;
   border-top: 1px solid #e2e8f065;
   .contents {
     cursor: pointer;
