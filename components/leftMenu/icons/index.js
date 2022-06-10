@@ -102,7 +102,7 @@ const PortalIcons = ({ selected, icon }) => {
           />
         </svg>
       );
-    case "External":
+    case "External Reports":
       return (
         <svg
           width="24"
@@ -173,7 +173,7 @@ const PortalIcons = ({ selected, icon }) => {
           />
         </svg>
       );
-    case "Research":
+    case "Research & Sentiment":
       return (
         <svg
           width="24"
@@ -216,7 +216,7 @@ const PortalIcons = ({ selected, icon }) => {
           />
         </svg>
       );
-    case "Trade":
+    case "Trade Documents":
       return (
         <svg
           width="24"
@@ -266,7 +266,7 @@ const PortalIcons = ({ selected, icon }) => {
           />
         </svg>
       );
-    case "SignOff":
+    case "Sign Off":
       return (
         <svg
           width="24"

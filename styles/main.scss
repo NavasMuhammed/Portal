@@ -31,26 +31,7 @@
     margin-left: 40px;
     color: #475569;
     font-size: 14px;
-    span {
-      &:after {
-        content: "";
-        height: 2px;
-        width: 5px;
-        background: rgb(40, 233, 30);
-        position: absolute;
-        left: 0px;
-        right: 0px;
-        opacity: 0;
-        transform-origin: left center;
-        transform: scaleX(0);
-      }
-    }
-    &:hover {
-      span:after {
-        transform: scaleX(1);
-        opacity: 1;
-      }
-    }
+    
   }
 }
 
@@ -83,6 +64,7 @@
   padding-left: 40px;
   display: flex;
   flex-direction: column;
+  width:1250px;
   .titleBox {
     display: flex;
     justify-content: space-between;
@@ -93,7 +75,7 @@
   }
   .background {
     background-color: #fff;
-    width: 376px;
+    width: 366px;
     height: 37px;
     border-radius: 8px;
     display: flex;
@@ -102,17 +84,22 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     .sortBox {
       display: flex;
-      justify-content: space-around;
-      width: 368px;
+      justify-content: space-between;
+      width: 358px;
       font-size: 14px;
+      .sortitem{
+        
+      }
       .sortBoxItem {
         cursor: pointer;
-        padding: 5px;
+        padding: 6px;
         border-radius: 5px;
       }
       .selected {
         background-color: #ecfdf5;
         color: #10b981;
+        // padding: 7px;
+        
       }
     }
   }
@@ -120,6 +107,7 @@
   .inputBox {
     display: flex;
     margin-top: 40px;
+    justify-content: space-around;
     .companyDetails {
       color: #475569;
       width: 225px;

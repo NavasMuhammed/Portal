@@ -6,7 +6,7 @@ function Summary() {
       <DashBoardLayout>
         <div className="righContent">
           <div className="dummy">
-            Summary page
+            status page
           </div>
         </div>
       </DashBoardLayout>

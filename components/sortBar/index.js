@@ -10,7 +10,7 @@ function SortBarNav() {
     <div className="sortBox">
       {TopbarData.map((item, index) => {
         return (
-          <div
+          <div className="sortitem"
             onClick={() => {
               handleSelect(item.id);
             }}

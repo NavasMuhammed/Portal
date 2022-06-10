@@ -1,10 +1,13 @@
 .leftMenu {
   border-right: 1px solid #e2e8f0;
   padding-right: 0px;
+  width:256px;
   .selected {
     font-weight: 600;
   }
   .items {
+    width: 177px;
+    height:456px;
     display: flex;
     flex-direction: column;
     margin-left: 0px;
@@ -13,6 +16,7 @@
     height: 504px;
     padding-right: 31px;
     color: #181c27;
+    border-right: 1px solid #e2e8f000;
     .item:hover {
       cursor: pointer;
       -moz-transform: scale(1.1);
@@ -29,9 +33,15 @@
     .item {
       display: flex;
       text-decoration: none;
-
+      font-family: Open Sans;
+      font-size: 12px;
+      line-height:16px;
+      width: 200px;;
       span {
         margin-left: 20px;
+        margin-top: 5px;
+        // font-weight: bold;
+        color: #181C27
       }
     }
   }

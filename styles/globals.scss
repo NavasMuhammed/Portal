@@ -7,12 +7,41 @@ body {
 * {
   box-sizing: border-box;
 }
-.tab{
-    width: 100%;
+.tab {
+  width: 100%;
   height: 134px;
   background-color: rgb(255, 255, 255);
 }
 .mainBody {
-    display: flex;
-    background-color: #f7f7f7;
-  }
+  display: flex;
+  background-color: #f7f7f7;
+}
+.monitoring {
+  width: 100vw;
+  height: calc(100vh - 140px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.closed {
+  width: 100vw;
+  height: calc(100vh - 140px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tasks {
+  width: 100vw;
+  height: calc(100vh - 140px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dummy {
+  width: calc(100vw - 290px);
+  height: calc(100vh - 230px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
