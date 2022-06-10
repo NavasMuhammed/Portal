@@ -1,32 +1,28 @@
 import React from "react";
-import Link from "next/link";
+import { useRouter } from "next/router";
 import { TopbarData } from "./data";
 function TopBarNav() {
-  const [selectedId, setSelectedId] = React.useState(1);
-  function handleSelect(index) {
-    setSelectedId(index);
-  }
+  const router = useRouter();
   return (
     <div className="topbarLower">
       <div className="contents">
         {TopbarData.map((item, index) => {
           return (
-            <Link href={item.path}>
-              <div
-                onClick={() => {
-                  handleSelect(item.id);
-                }}
-                key={index}
+            <div
+              onClick={(e) => {
+                e.preventDefault();
+                router.push(item.path);
+              }}
+              key={index}
+            >
+              <span
+                className={
+                  router.asPath === item.path ? "content selected" : "content"
+                }
               >
-                <span
-                  className={
-                    selectedId === item.id ? "content selected" : "content"
-                  }
-                >
-                  {item.title}
-                </span>
-              </div>
-            </Link>
+                {item.title}
+              </span>
+            </div>
           );
         })}
       </div>
