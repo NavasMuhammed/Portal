@@ -8,13 +8,12 @@
   }
   .items {
     width: 177px;
-    height: 456px;
     display: flex;
     flex-direction: column;
     margin-left: 0px;
     /* margin-top: 40px; */
     justify-content: space-between;
-    height: 504px;
+    height: 450px;
     padding-right: 31px;
     color: #181c27;
     border-right: 1px solid #e2e8f000;
@@ -48,15 +47,18 @@
     }
   }
   .progressBox {
+<<<<<<< HEAD
     margin-top: 94px;
+=======
+    margin-top: 40px;
+>>>>>>> f3cc185b2450f3faca4cec0c1552393ece1798e2
     width: 177px;
     height: 33px;
     span {
       margin-left: 18px;
       font-size: 13px;
       color: #475569;
-      letter-spacing:-2%;
+      letter-spacing: -2%;
     }
-    
   }
 }
