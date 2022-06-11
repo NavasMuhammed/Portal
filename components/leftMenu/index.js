@@ -32,7 +32,7 @@ export default function LeftMenu() {
         })}
       </div>
       <div className="progressBox">
-        <Progress done="27"/>
+        <Progress progress="27" />
       </div>
     </div>
   );
